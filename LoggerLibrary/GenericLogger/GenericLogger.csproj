@@ -4,6 +4,14 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <PackageId>GenericLogger</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Gabriel Marius Popescu</Authors>
+    <Description>A generic logging library with Console, File, and Database implementations.</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RepositoryUrl>https://github.com/GabrielMariusPopescu/LoggerLibrary</RepositoryUrl>
+    
   </PropertyGroup>
 
   <ItemGroup>
