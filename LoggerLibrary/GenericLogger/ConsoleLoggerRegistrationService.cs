@@ -2,6 +2,6 @@
 
 public static class ConsoleLoggerRegistrationService
 {
-    public static IServiceCollection RegisterLoggerService(this IServiceCollection services) 
+    public static IServiceCollection RegisterConsoleLoggerService(this IServiceCollection services) 
         => services.AddSingleton<ILogger, ConsoleLogger>();
 }

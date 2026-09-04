@@ -35,8 +35,12 @@ public class ConsoleLogger: ILogger
     private static string GetPrefix(LogLevel logLevel)
         => logLevel switch
         {
+            LogLevel.Trace => "TRACE",
+            LogLevel.Debug => "DEBUG",
             LogLevel.Information => "INFO",
+            LogLevel.Warning => "WARN",
             LogLevel.Error => "ERROR",
+            LogLevel.Critical => "CRITICAL",
             _ => logLevel.ToString().ToUpper()
         };
 }

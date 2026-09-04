@@ -22,7 +22,8 @@ public class DatabaseLogger(string connectionString) : ILogger
 
     public async Task Log(LogLevel logLevel, string message, Exception? exception = null)
     {
-        if (logLevel == LogLevel.None) return;
+        if (logLevel == LogLevel.None) 
+            return;
 
         await using var connection = new SqlConnection(connectionString);
         await using var command = connection.CreateCommand();
